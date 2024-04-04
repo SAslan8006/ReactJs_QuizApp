@@ -3,9 +3,9 @@ import './Modal.css'
 
 const Modal = ({ score }) => {
     return (
-        <div>
-            <div> Skore: {score}</div>
-            <div></div>
+        <div className='modal'>
+            <div className='modal-title'> Skore: {score}</div>
+            <div className='modal-btn' onClick={() => window.location = "/"}>Yeniden Başla</div>
         </div>
     )
 }
