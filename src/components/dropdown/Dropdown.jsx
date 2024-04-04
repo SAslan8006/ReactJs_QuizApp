@@ -1,7 +1,6 @@
 import React from 'react'
 import './Dropdown.css'
 const Dropdown = ({ data, setDifficultyChange }) => {
-    console.log(data)
     return (
         <div className='dropdown'>
             <select name="" id="" onChange={(e) => setDifficultyChange(e.target.value)}>

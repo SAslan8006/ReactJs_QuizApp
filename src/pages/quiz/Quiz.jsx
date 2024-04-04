@@ -17,7 +17,6 @@ const Quiz = () => {
         }
         getData();
     }, [])
-    console.log(quizData);
     return (
         <div className='quiz'>
             {modal ?
