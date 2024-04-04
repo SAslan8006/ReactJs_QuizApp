@@ -1,9 +1,10 @@
 import React from 'react'
 import './Dropdown.css'
 const Dropdown = ({ data, setDifficultyChange }) => {
+    console.log(data)
     return (
         <div className='dropdown'>
-            <select name="" id="" onChange={(e) => setDifficultyChange ? setDifficultyChange(e.target.value) : setDifficultyChange("easy")}>
+            <select name="" id="" onChange={(e) => setDifficultyChange(e.target.value)}>
                 {data.map((item, index) => (
                     <option key={index} value={item}>{item}</option>
                 ))}
